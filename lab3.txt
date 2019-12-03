@@ -1,0 +1,25 @@
+Перед виконанням завдання я рекомендую ознайомитися з першими
+трьома розділами книги Pro Git (Вступ, Основи Git, Галуження в git) за
+посиланням ​ https://git-scm.com/book/uk/v2​
+. Завдання навмисно містить
+кілька конфліктів злиття.
+Клонуйте репозиторій: ​ https://github.com/SergiiPiatakov/calculator.git
+Використовуючи `rebase -i`, поміняйте місцями коміти: "fix truncation
+error" та "formatting: use tabs instead of spaces".
+Підпишіть їх і створіть два патчі, використовуючи `git format-patch`.
+Поєднайте "improve calculation accuracy" та "fix truncation error" в один
+коміт, використовуючи `rebase -i`. Підпишіть його.
+Потім видаліть верхній коміт "formatting: use tabs instead of spaces",
+використовуючи `git rebase -i`.
+Перейменуйте поточне віддалене сховище на "github". Додайте ще одне
+віддалене сховище: ​ https://gitlab.com/SergiiPiatakov/calculator.git і назвіть
+його "gitlab".
+Отримайте код з віддаленого сховища "gitlab" за допомогою "git fetch" та
+дослідіть його за допомогою `git log gitlab/master`.
+Потім додайте коміт: "add a multiplication operation" використовуючи `git
+cherry-pick`.
+Створіть власне виправлення на 5-15 рядків (будь-які зміни).
+Надішліть результат у власний репозиторій.
+Будь ласка, надайте мені:
+- посилання на ваш репозиторій;
+- два патчі, які були підготовлені "git format-patch".
